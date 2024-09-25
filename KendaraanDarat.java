@@ -8,16 +8,13 @@ package com.indah_cahya.pbo_5;
  *
  * @author user
  */
-//kelas turunan Mobil
-public class Mobil extends KendaraanDarat{
-    int jumlahPintu;
-    String model;
+//class menengah KendaraanDarat yang diwarisi class Kendaraan 
+public class KendaraanDarat extends Kendaraan{
+    int jumlahRoda;
     
-    //metode override untuk menampilkan informasi dari kelas Mobil
     @Override
     public void tampilkanInfo() {
         super.tampilkanInfo();
-        System.out.println("Jumlah Pintu: " + jumlahPintu);
-        System.out.println("Model: " + model);
+        System.out.println("Jumlah Roda: " + jumlahRoda);
     }
 }
