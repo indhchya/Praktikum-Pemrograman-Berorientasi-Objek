@@ -2,22 +2,17 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.indah_cahya.pbo_5;
+package com.indah_cahya.praktikum_pbo6;
 
 /**
  *
  * @author user
  */
-//class turunan Anjing
-public class Anjing extends Hewan{
-    
-    // Override method tampilkanInfo
+//kelas turunan Anjing dari kelas induk Hewan
+public class Anjing extends Hewan{  
     @Override
-    public void TampilkanInfo() {
-        super.TampilkanInfo();
-        System.out.println("Suara Hewan: Guk guk");
-        System.out.println("Hewan ini adalah anjing");
-    }    
+    public void bersuara() {
+        System.out.println("Woof");
+    }
 }
-
 

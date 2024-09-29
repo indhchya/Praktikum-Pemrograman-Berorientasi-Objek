@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.indah_cahya.pbo_5;
+package com.indah_cahya.praktikum_pbo6;
 
 /**
  *
@@ -10,21 +10,20 @@ package com.indah_cahya.pbo_5;
  */
 public class MainHewan {
     public static void main(String[] args) {
-        // Membuat objek Kucing
-        Kucing kucing1 = new Kucing();
-        kucing1.namaHewan = "PIO";
-        kucing1.umur = 5;
-        kucing1.jenis = "Anggora";
-        kucing1.TampilkanInfo();
+        Hewan hewan = new Kucing(); //Membuat objek hewan dari kelas Kucing
+        hewan.bersuara();
+        
+        Kucing kucing = new Kucing();
+        kucing.makan("ikan"); //Memanggil metode makan() dari kelas Hewan
+        kucing.makan("ikan", 2); //Memanggil metode makan() yang overloaded
         
         System.out.println("");
         
-        //Membuat objek Anjing
-        Anjing anjing2 = new Anjing();
-        anjing2.namaHewan = "Scoobydo";
-        anjing2.umur = 3;
-        anjing2.jenis = "Pitbull";
-        anjing2.TampilkanInfo();
-    }      
+        Anjing anjing = new Anjing();
+        anjing.bersuara(); //Output: Woof
+        anjing.makan("daging", 3); //Memanggil metode makan() yang overloaded pada kelas Hewan
+    }
 }
+
+
 

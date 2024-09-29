@@ -8,11 +8,18 @@ package com.indah_cahya.praktikum_pbo6;
  *
  * @author user
  */
-//kelas turunan Kucing dari kelas induk Hewan
-public class Kucing extends Hewan{  
+public class Buku extends Produk {
+    double diskon;
+
+    Buku(String nama, double harga, double diskonPersen) {
+        super(nama, harga);
+        this.diskon = diskonPersen;
+    }
+
     @Override
-    public void bersuara() {
-        System.out.println("Miiaaww");
+    double hitungDiskon() {
+        return harga * diskon / 100; // Hitung diskon persentase
     }
 }
+
 
